@@ -1,0 +1,33 @@
+@import "../../stylesheet/variables.scss";
+
+.transaction-status {
+  text-align: right;
+
+  .status-type {
+    font-size: $large-text-size;
+    font-weight: 500;
+
+    &.yellow-status {
+      color: $yellow-text-color;
+    }
+
+    &.green-status {
+      color: $green-text-color;
+    }
+
+    &.blue-status {
+      color: $blue-text-color;
+    }
+  }
+
+  .status-field-caption {
+    font-size: $base-text-size;
+    opacity: 0.5;
+  }
+}
+
+@media (min-width: 992px) {
+  .transaction-status {
+    text-align: left;
+  }
+}

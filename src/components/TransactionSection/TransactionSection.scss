@@ -1,0 +1,36 @@
+@import "../../stylesheet/variables.scss";
+
+.transaction-section {
+  margin-top: $transaction-section-margin;
+
+  .transaction-section-heading {
+    display: flex;
+    justify-content: space-between;
+
+    h2 {
+      font-size: $transaction-heading-size;
+    }
+  }
+
+  .transactions {
+    margin-top: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .transaction-section {
+    .transaction-section-heading {
+      .transaction-section-filter {
+        width: 42px;
+        height: 42px;
+      }
+    }
+    .show-more-btn-wrapper {
+      text-align: center;
+
+      .show-more-btn {
+        width: 270px;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "../../stylesheet/variables.scss";
+
+.promo-code-section {
+  margin-top: $promo-code-section-margin;
+
+  .promo-code-header {
+    font-size: $base-heding-size;
+  }
+
+  .promo-code-subheader {
+    font-size: $promo-code-subheader-size;
+    opacity: 0.5;
+    font-weight: 400;
+    margin: 8px 0;
+  }
+}

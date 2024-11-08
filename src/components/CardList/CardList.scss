@@ -1,0 +1,26 @@
+@import "../../stylesheet/variables.scss";
+
+.card-list-wrapper {
+  .card-list-title {
+    margin-top: 24px;
+    font-size: $base-subheading-size;
+    font-weight: 500;
+    margin-bottom: 18px;
+  }
+
+  .card-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 20px;
+    row-gap: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .card-list-wrapper {
+    .card-list {
+      display: flex;
+      flex-flow: wrap;
+    }
+  }
+}

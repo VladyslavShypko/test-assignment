@@ -1,0 +1,23 @@
+@import "../../stylesheet/variables.scss";
+
+.payment-systems-section {
+  .payment-systems-header {
+    margin-top: 24px;
+    margin-bottom: 12px;
+    font-weight: 800;
+    font-size: $large-heding-size;
+  }
+
+  .payment-systems-subheader {
+    font-size: $base-heding-size;
+    font-weight: 800;
+  }
+}
+
+@media (min-width: 992px) {
+  .payment-systems-section {
+    .payment-systems-header {
+      margin: 32px 0;
+    }
+  }
+}

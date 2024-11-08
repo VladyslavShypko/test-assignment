@@ -1,0 +1,57 @@
+@import "../../stylesheet/variables.scss";
+
+.card {
+  position: relative;
+  background-color: $content-background-color;
+  border-radius: $card-border-radius;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13px 0 8px 0;
+  height: $card-height;
+  cursor: pointer;
+
+  .card-tag {
+    position: absolute;
+    top: -8px;
+    height: 16px;
+    padding: 0 20px;
+    line-height: 16px;
+    font-weight: 700;
+    font-size: 8px;
+    border-radius: $extra-small-border-radius;
+    box-shadow: 0px 4px 6px 0px #00000026;
+
+    &.blue-tag {
+      background-color: $blue-background-color;
+    }
+
+    &.red-tag {
+      background-color: $red-text-color;
+    }
+  }
+
+  .card-content {
+    text-align: center;
+
+    .card-title {
+      font-size: $medium-text-size;
+      font-weight: 700;
+      margin-bottom: 2px;
+    }
+
+    .card-description {
+      opacity: 0.5;
+      font-weight: 400;
+      font-size: $base-text-size;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .card {
+    width: 170px;
+    justify-content: space-around;
+  }
+}

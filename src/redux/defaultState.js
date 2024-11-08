@@ -1,0 +1,122 @@
+const defaultState = {
+  isPaymentPopupOpen: false,
+  isSidebarMenuOpen: false,
+  currentBalance: 125.02,
+  promoCode: "ALPHA2021",
+  isDesktop: false,
+  eMoneyCards: [
+    {
+      id: 0,
+      tag: {
+        title: "POPULAR",
+      },
+      svgType: "mastercard",
+      title: "Mastercard",
+      commission: 0.05,
+    },
+    {
+      id: 1,
+      tag: {
+        title: "TRUSTED",
+      },
+      svgType: "visa",
+      title: "Visa",
+      commission: 0.05,
+    },
+    {
+      id: 2,
+      tag: null,
+      svgType: "skrill",
+      title: "Skrill",
+      commission: 0.0,
+    },
+    {
+      id: 3,
+      tag: null,
+      svgType: "pm",
+      title: "Perfect Money, EUR",
+      commission: 0.0,
+    },
+    {
+      id: 4,
+      tag: null,
+      svgType: "piastrix",
+      title: "Piastrix, EUR",
+      commission: 0.0,
+    },
+    {
+      id: 5,
+      tag: null,
+      svgType: "sticpay",
+      title: "SticPay, EUR",
+      commission: 0.0,
+    },
+    {
+      id: 7,
+      tag: null,
+      svgType: "pin",
+      title: "PIN",
+      commission: 0.01,
+    },
+  ],
+  cryptoCards: [
+    {
+      id: 8,
+      tag: null,
+      svgType: "bitcoin",
+      title: "BTC",
+      commission: 0.0,
+    },
+    {
+      id: 9,
+      tag: null,
+      svgType: "ethereum",
+      title: "ETH",
+      commission: 0.0,
+    },
+    {
+      id: 10,
+      tag: null,
+      svgType: "tether",
+      title: "USDT",
+      commission: 0.0,
+    },
+  ],
+  transactions: [
+    {
+      paymentMethodIcon: "sticpay",
+      status: "Processing",
+      withdrawBy: "SticPay",
+      transactionNumber: "142354",
+      paymentDate: "02.01 at 12:34PM",
+      amountPayed: 23.05,
+    },
+    {
+      paymentMethodIcon: "sticpay",
+      status: "Active",
+      withdrawBy: "SticPay",
+      transactionNumber: "142354",
+      paymentDate: "05.12 at 3:40PM",
+      amountPayed: 123.27,
+    },
+    {
+      paymentMethodIcon: "mastercard",
+      status: "Performed",
+      withdrawBy: "Mastercard",
+      transactionNumber: "23561",
+      paymentDate: "24.11 at 4:20AM",
+      amountPayed: 80.0,
+    },
+    {
+      paymentMethodIcon: "mastercard",
+      status: "Active",
+      withdrawBy: "Mastercard",
+      transactionNumber: "89561",
+      paymentDate: "05.12 at 3:40PM",
+      amountPayed: 180.0,
+    },
+  ],
+  selectedPaymentMethod: {},
+};
+
+export default defaultState;

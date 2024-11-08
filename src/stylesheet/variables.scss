@@ -1,0 +1,122 @@
+@function neg($val) {
+  @return calc(#{$val} * -1);
+}
+
+:root {
+  //Font size
+  --large-text-size: 12px;
+  --medium-text-size: 10px;
+  --base-text-size: 8px;
+
+  --btn-font-size: 14px;
+  --input-font-size: 14px;
+  --promo-code-subheader-size: 10px;
+  --current-balance-size: 14px;
+  --current-balance-amount-size: 18px;
+  --transaction-heading-size: 18px;
+
+  //Height
+  --transaction-height: 32px;
+  --small-btn-height: 35px;
+  --large-btn-height: 40px;
+  --card-height: 60px;
+
+  //Padding
+  --base-padding: 20px;
+  --payment-popup-padding: 20px;
+
+  //Margin
+  --transaction-divider-margin: 16px;
+  --promo-code-section-margin: 32px;
+  --transaction-section-margin: 32px;
+
+  //Border radius
+  --card-border-radius: 4px;
+
+  @media (min-width: 992px) {
+    //Font size
+    --large-text-size: 16px;
+    --medium-text-size: 14px;
+    --base-text-size: 12px;
+
+    --btn-size: 16px;
+    --input-font-size: 16px;
+    --promo-code-subheader-size: 16px;
+    --current-balance-size: 16px;
+    --current-balance-amount-size: 24px;
+    --transaction-heading-size: 24px;
+
+    //Height
+    --transaction-height: 48px;
+    --small-btn-height: 42px;
+    --large-btn-height: 42px;
+    --card-height: 90px;
+
+    //Padding
+    --base-padding: 120px;
+    --payment-popup-padding: 32px;
+
+    //Margin
+    --transaction-divider-margin: 18px;
+    --promo-code-section-margin: 42px;
+    --transaction-section-margin: 52px;
+
+    //Border border-radius
+    --card-border-radius: 6px;
+  }
+}
+
+//Font size
+$large-heding-size: 24px;
+$base-heding-size: 18px;
+$base-subheading-size: 16px;
+$large-text-size: var(--large-text-size);
+$medium-text-size: var(--medium-text-size);
+$base-text-size: var(--base-text-size);
+
+$btn-font-size: var(--btn-font-size);
+$input-font-size: var(--input-font-size);
+$sidebar-menu-font-size: 16px;
+$promo-code-subheader-size: var(--promo-code-subheader-size);
+$current-balance-size: var(--current-balance-size);
+$current-balance-amount-size: var(--current-balance-amount-size);
+$transaction-heading-size: var(--transaction-heading-size);
+
+//Height
+$transaction-height: var(--transaction-height);
+$small-btn-height: var(--small-btn-height);
+$large-btn-height: var(--large-btn-height);
+$card-height: var(--card-height);
+
+//Padding
+$base-padding: var(--base-padding);
+$payment-popup-padding: var(--payment-popup-padding);
+
+//Margin
+$transaction-divider-margin: var(--transaction-divider-margin);
+$promo-code-section-margin: var(--promo-code-section-margin);
+$transaction-section-margin: var(--transaction-section-margin);
+
+//Border radius
+$extra-small-border-radius: 2px;
+$small-border-radius: 3px;
+$base-border-radius: 4px;
+$medium-border-radius: 6px;
+$large-border-radius: 10px;
+
+$card-border-radius: var(--card-border-radius);
+
+//Color
+$main-background-color: #20242a;
+$content-background-color: #30363e;
+$blue-background-color: #2d69eb;
+$light-blue-background-color: #4c84ff;
+$black-background-color: #000000;
+
+$main-text-color: #ffffff;
+$red-text-color: #fc3d40;
+$blue-text-color: #386df8;
+$green-text-color: #00ba61;
+$yellow-text-color: #e5aa11;
+$divider-color: #1c1a1a;
+$btn-color: #f9484b;

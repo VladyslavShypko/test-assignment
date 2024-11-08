@@ -1,0 +1,55 @@
+@import "../../stylesheet/variables.scss";
+
+.transaction-sorting {
+  position: relative;
+
+  .transaction-sorting-icon {
+    background-color: $content-background-color;
+    border-radius: $base-border-radius;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  .transaction-sorting-dropdown {
+    position: absolute;
+    background-color: $content-background-color;
+    border-radius: 4px;
+    overflow: hidden;
+    list-style-type: none;
+    margin: 5px 0;
+    padding: 0;
+    width: 140px;
+    right: 0;
+    z-index: 10;
+
+    .sorting {
+      margin: 0;
+      background-color: $btn-color;
+
+      &:hover {
+        background-color: $content-background-color;
+      }
+
+      button {
+        text-align: left;
+        background: none;
+        color: inherit;
+        border: none;
+        padding: 5px;
+        font-size: $large-text-size;
+        width: 100%;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .transaction-sorting {
+    .transaction-sorting-icon {
+      width: 42px;
+      height: 42px;
+    }
+  }
+}

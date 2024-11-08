@@ -1,0 +1,17 @@
+@import "./stylesheet/variables.scss";
+
+.App {
+  background-color: $main-background-color;
+  color: $main-text-color;
+
+  .container {
+    position: relative;
+    padding: 0 $base-padding 100px $base-padding;
+
+    &.modal-background {
+      opacity: 0.8;
+      background-color: $black-background-color;
+      filter: blur(4px);
+    }
+  }
+}

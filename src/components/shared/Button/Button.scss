@@ -1,0 +1,33 @@
+@import "../../../stylesheet/variables.scss";
+
+.btn {
+  width: 100%;
+  background-color: $btn-color;
+  border: none;
+  border-radius: $base-border-radius;
+  font-size: $btn-font-size;
+  font-weight: 700;
+  color: $main-text-color;
+  cursor: pointer;
+
+  &.disabled-btn {
+    opacity: 0.5;
+    cursor: auto;
+  }
+
+  &.small-top-margin {
+    margin-top: 12px;
+  }
+
+  &.large-top-margin {
+    margin-top: 24px;
+  }
+
+  &.small-btn {
+    height: $small-btn-height;
+  }
+
+  &.large-btn {
+    height: $large-btn-height;
+  }
+}
